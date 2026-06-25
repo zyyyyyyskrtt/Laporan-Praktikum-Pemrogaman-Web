@@ -1,0 +1,247 @@
+/* =====================
+   Reset & Base (Modernized)
+   ===================== */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Menggunakan font sistem modern untuk tampilan yang rapi dan cepat */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f9; /* Latar belakang abu-abu sangat muda */
+    color: #212529; /* Teks dark grey, bukan hitam pekat */
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+a {
+    color: #0d6efd; /* Biru aksi modern */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+
+/* =====================
+   Layout & Header
+   ===================== */
+#container {
+    max-width: 1000px;
+    margin: 40px auto; /* Memberikan ruang di atas dan bawah */
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bayangan bingkai halus */
+    border-radius: 8px; /* Sudut membulat */
+    overflow: hidden; /* Mencegah konten keluar dari sudut membulat */
+}
+
+header {
+    background: #ffffff;
+    padding: 30px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50; /* Biru-abu gelap elegan */
+    letter-spacing: -0.5px;
+}
+
+/* =====================
+   Navigation
+   ===================== */
+nav {
+    background-color: #f8f9fa; /* Latar menu abu-abu sangat terang */
+    display: flex;
+    border-bottom: 1px solid #e9ecef;
+}
+
+nav a {
+    color: #495057;
+    padding: 16px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 2px solid transparent; /* Persiapan untuk garis bawah saat aktif */
+    transition: all 0.2s ease;
+}
+
+nav a.active, nav a:hover {
+    color: #0d6efd;
+    background-color: #ffffff;
+    border-bottom: 2px solid #0d6efd; /* Garis biru di bawah menu aktif */
+}
+
+/* =====================
+   Main Wrapper
+   ===================== */
+#wrapper {
+    padding: 30px;
+    min-height: 400px;
+}
+
+/* =====================
+   Table Styles (Modernized)
+   ===================== */
+.table {
+    width: 100%;
+    border-collapse: separate; /* Penting untuk rounded corners pada tabel */
+    border-spacing: 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+}
+
+.table thead tr {
+    background-color: #f8f9fa; /* Abu-abu terang untuk header tabel */
+}
+
+.table th, .table td {
+    padding: 16px; /* Ruang lebih lega */
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table th {
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5; /* Efek hover pada baris tabel */
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none; /* Menghilangkan garis di baris paling bawah */
+}
+
+.table td b {
+    font-size: 16px;
+    color: #212529;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.table td p, .table td small {
+    font-size: 13px;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* =====================
+   Buttons (Modernized)
+   ===================== */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* Tombol Ubah (Primary Light) */
+.btn:not(.btn-danger):not(.btn-large) {
+    background-color: #e7f1ff;
+    color: #0c63e4 !important;
+    border-color: #e7f1ff;
+}
+
+.btn:not(.btn-danger):not(.btn-large):hover {
+    background-color: #d1e7dd;
+    color: #0a58ca !important;
+}
+
+/* Tombol Hapus (Danger Outline to Solid) */
+.btn-danger {
+    background-color: #fff;
+    color: #dc3545 !important;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #dc3545;
+    color: #fff !important;
+}
+
+/* Tombol Submit di Form (Primary Solid) */
+.btn-large {
+    padding: 12px 24px;
+    font-size: 15px;
+    background-color: #0d6efd;
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-large:hover {
+    background-color: #0b5ed7;
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+}
+
+/* =====================
+   Forms
+   ===================== */
+form {
+    max-width: 800px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    margin-bottom: 20px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+form h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #212529;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 12px;
+}
+
+/* =====================
+   Footer
+   ===================== */
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    border-top: 1px solid #e9ecef;
+}
