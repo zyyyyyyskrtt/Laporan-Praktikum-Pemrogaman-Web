@@ -1,4 +1,14 @@
 # Lab7Web - Praktikum Pemrograman Web 2 (CodeIgniter 4)
+### Identitas Mahasiswa
+
+Nama : Razy Al Farisi  
+NIM : 312410524  
+Kelas : I241E  
+Program Studi : Teknik Informatika  
+Universitas : Universitas Pelita Bangsa  
+
+---
+
 
 Repositori ini berisi kumpulan tugas dan implementasi dari Praktikum Pemrograman Web 2 menggunakan framework PHP **CodeIgniter 4**. Proyek ini mencakup modul praktikum yang saling terhubung, dimulai dari konfigurasi dasar framework dan arsitektur MVC, hingga pembuatan sistem CRUD, manajemen View Layout, dan implementasi Modul Login dengan *Authentication Filter*.
 
@@ -223,7 +233,4 @@ Ini adalah tahap akhir penerapan keamanan *Server-Side*. Modul ini memastikan RE
 ![foto](https://github.com/Manueljds2311105/Lab2_7_Web/blob/937346e4d4edc024d1c9bec8b5dabc17ee24125e/Web2%20Praktikum%20Screenshot/Screenshot%202026-06-13%20214217.png)
 ![foto](https://github.com/Manueljds2311105/Lab2_7_Web/blob/937346e4d4edc024d1c9bec8b5dabc17ee24125e/Web2%20Praktikum%20Screenshot/Screenshot%202026-06-13%20214244.png)
 
-**Dikerjakan Oleh:**
-Manuel_312410493 (Manueljds2311105)
 
-*Proyek ini dikembangkan sebagai bagian dari Modul Praktikum Pemrograman Web 2 Universitas Pelita Bangsa.*
